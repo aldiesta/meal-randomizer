@@ -1,0 +1,23 @@
+.main-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+		.meal-section {
+
+		}
+
+		.button-section {
+			display: flex;
+			flex-direction: row;
+
+			#reset {
+				margin-right: 16px;
+			}
+
+			#randomize {
+
+		}
+	}
+}
