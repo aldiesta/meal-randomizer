@@ -1,32 +1,33 @@
 import Card from '@mui/material/Card';
+import PropTypes from 'prop-types';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const MealCard = () => {
+const MealCard = ({ image, title, description }) => {
 	return (
 		<div className="meal-card">
 			<Card sx={{ maxWidth: 300 }}>
 				<CardMedia
 					sx={{ height: 100 }}
-					image="src/assets/images/chicken-parmesan.jpg"
-					title="Chicken Parmesan"
+					image={image}
+					title={title} 
 				/>
 				<CardContent>
 					<Typography gutterBottom variant="h5" component="div">
-					Chicken Parmesan
+						{title}
 					</Typography>
 					<Typography variant="body2" color="text.secondary">
-					Italian Dish - Breaded chicken covered in melted cheese and red sauce
+						{description}
 					</Typography>
 				</CardContent>
 				<CardActions>
 					<Button 
 						size="small"
 						onClick={() => {
-							alert('Show Recipe')
+							alert('Show Recipe');
 						}}
 					>
 						Show Recipe
@@ -34,7 +35,13 @@ const MealCard = () => {
 				</CardActions>
 			</Card>
 		</div>
-	)
+	);
 }
- 
+
+MealCard.propTypes = {
+	image: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+	description: PropTypes.string.isRequired,
+};
+
 export default MealCard;

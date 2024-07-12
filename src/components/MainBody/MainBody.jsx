@@ -1,15 +1,35 @@
 import Box from '@mui/material/Box';
 import { Button } from '@mui/material';
 import MealCard from '../MealCard/MealCard';
-import './MainBody.scss'
+import './MainBody.scss';
+
+const meals = [
+	{
+		image: 'src/assets/images/chicken-parmesan.jpg',
+		title: 'Chicken Parmesan',
+		description: 'Italian',
+	},
+	{
+		image: 'src/assets/images/sushi.jpg',
+		title: 'Sushi',
+		description: 'Japanese',
+	},
+	{
+		image: 'src/assets/images/chili.jpg',
+		title: 'Chili',
+		description: 'American',
+	},
+	
+];
 
 const MainBody = () => {
 	return (
 		<Box
 			className="main-box"
 			height={1000}
-			width={visualViewport}
+			width="100vw"
 			display="flex"
+			flexDirection="column"
 			alignItems="center"
 			justifyContent={'center'}
 			gap={4}
@@ -19,14 +39,21 @@ const MainBody = () => {
 			}}
 		>
 			<div className="meal-section">
-				<MealCard />
+				{meals.map((meal, index) => (
+					<MealCard
+						key={index}
+						image={meal.image}
+						title={meal.title}
+						description={meal.description}
+					/>
+				))}
 			</div>
 			<div className="button-section">
-			<Button
+				<Button
 					id="reset" 
 					variant="contained"
 					onClick={() => {
-						alert('Resetting')
+						alert('Resetting');
 					}}
 				>
 					Reset
@@ -35,7 +62,7 @@ const MainBody = () => {
 					id="randomize"
 					variant="contained"
 					onClick={() => {
-						alert('Randomizing')
+						alert('Randomizing');
 					}}
 				>
 					Randomize
@@ -45,4 +72,4 @@ const MainBody = () => {
 	)
 }
 
-export default MainBody
+export default MainBody;
