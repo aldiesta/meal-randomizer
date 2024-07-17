@@ -19,7 +19,41 @@ const meals = [
 		title: 'Chili',
 		description: 'American',
 	},
-	
+	{
+		image: 'src/assets/images/pot-roast.jpg',
+		title: 'Pot Roast',
+		description: 'American',
+	},
+	{
+		image: 'src/assets/images/fried-rice.jpg',
+		title: 'Fried Rice',
+		description: 'Chinese',
+	},
+	{
+		image: 'src/assets/images/fajitas.jpg',
+		title: 'Fajitas',
+		description: 'Mexican',
+	},
+	{
+		image: 'src/assets/images/tacos.jpg',
+		title: 'Tacos',
+		description: 'Mexican',
+	},
+	{
+		image: 'src/assets/images/stir-fry.jpg',
+		title: 'Stir Fry',
+		description: 'Chinese',
+	},
+	{
+		image: 'src/assets/images/spaghetti.jpg',
+		title: 'Spaghetti',
+		description: 'Italian',
+	},
+	{
+		image: 'src/assets/images/carbonarajpg',
+		title: 'carbonara',
+		description: 'Italian',
+	},
 ];
 
 const MainBody = () => {
