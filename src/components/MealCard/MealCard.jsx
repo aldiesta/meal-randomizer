@@ -9,8 +9,8 @@ import Typography from '@mui/material/Typography';
 const MealCard = ({ image, title, description }) => {
 	return (
 		<div className="meal-card">
-			<Card sx={{ maxWidth: 300 }}>
-				<CardMedia
+			<Card className='card' sx={{ maxWidth: 300 }}>
+				<CardMedia className='card-media'
 					sx={{ height: 100 }}
 					image={image}
 					title={title} 

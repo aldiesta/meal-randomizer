@@ -50,9 +50,59 @@ const meals = [
 		description: 'Italian',
 	},
 	{
-		image: 'src/assets/images/carbonarajpg',
-		title: 'carbonara',
+		image: 'src/assets/images/carbonara.jpg',
+		title: 'Carbonara',
 		description: 'Italian',
+	},
+	{
+		image: 'src/assets/images/brats.jpg',
+		title: 'Brats',
+		description: 'American',
+	},
+	{
+		image: 'src/assets/images/burgers.jpg',
+		title: 'Burgers',
+		description: 'American',
+	},
+	{
+		image: 'src/assets/images/bbq-ribs.jpg',
+		title: 'BBQ Ribs',
+		description: 'American',
+	},
+	{
+		image: 'src/assets/images/pulled-pork.jpg',
+		title: 'Pulled Pork',
+		description: 'American',
+	},
+	{
+		image: 'src/assets/images/mac-and-cheese.jpg',
+		title: 'Mac and Cheese',
+		description: 'American',
+	},
+	{
+		image: 'src/assets/images/pizza.jpg',
+		title: 'Pizza',
+		description: 'Italian',
+	},
+	{
+		image: 'src/assets/images/pho.jpg',
+		title: 'Pho',
+		description: 'Vietnamese',
+	},
+	{
+		image: 'src/assets/images/bahn-mi.jpg',
+		title: 'Bahn Mi',
+		description: 'Vietnamese',
+	},
+	{
+		image: 'src/assets/images/french-onion-soup.jpg',
+		title: 'French Onion Soup',
+		description: 'French',
+	},
+	{
+		image: 'src/assets/images/paella.jpg',
+		title: 'Paella',
+		description: 'Spanish',
 	},
 ];
 
