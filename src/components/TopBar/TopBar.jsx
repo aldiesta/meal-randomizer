@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 const TopBar = () => {
 	return (
-		<div className="top-bar">
+		<div className="top-bar" data-testid="top-bar">
 			<Box sx={{ flexGrow: 1 }}>
 				<AppBar position="static">
 					<Toolbar 
