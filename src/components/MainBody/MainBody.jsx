@@ -130,11 +130,11 @@ const MainBody = () => {
             data-testid="main-body"
             className="main-box"
             height={1000}
-            width="100vw"
+            width="100"
             display="flex"
             flexDirection="column"
             alignItems="center"
-            justifyContent={'center'}
+            // justifyContent={'center'}
             gap={4}
             p={2}
             sx={{ 
