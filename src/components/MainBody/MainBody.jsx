@@ -129,7 +129,7 @@ const MainBody = () => {
         <Box
             data-testid="main-body"
             className="main-box"
-            height="auto"
+            minHeight="100vh"
             width="100"
             display="flex"
             flexDirection="column"
@@ -141,26 +141,6 @@ const MainBody = () => {
                 background: 'radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%)'
             }}
         >
-            <div className="meal-section">
-                {meals.map((meal, index) => (
-                    <MealCard
-                        key={index}
-                        image={meal.image}
-                        title={meal.title}
-                        description={meal.description}
-                    />
-                ))}
-            </div>
-            {selectedMeal && (
-            <div className="selected-meal">
-            <h2>Randomly Selected Meal</h2>
-            <MealCard
-                image={selectedMeal.image}
-                title={selectedMeal.title}
-                description={selectedMeal.description}
-            />
-            </div>
-            )}
             <div className="button-section">
                 <Button
                     id="reset" 
@@ -177,6 +157,28 @@ const MainBody = () => {
                     Randomize
                 </Button>
             </div>
+            {selectedMeal && (
+            <div className="selected-meal">
+                <h2>Randomly Selected Meal</h2>
+                <MealCard
+                    image={selectedMeal.image}
+                    title={selectedMeal.title}
+                    description={selectedMeal.description}
+                />
+            </div>
+            )}
+            <div className="meal-section">
+                {meals.map((meal, index) => (
+                    <MealCard
+                        key={index}
+                        image={meal.image}
+                        title={meal.title}
+                        description={meal.description}
+                    />
+                ))}
+            </div>
+            
+
         </Box>
     )
 }
