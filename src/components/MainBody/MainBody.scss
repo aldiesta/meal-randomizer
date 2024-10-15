@@ -1,20 +1,27 @@
 .main-box {
 
-		.meal-section {
-			display: flex;
-			justify-content: space-around;
-			width: 100%;
-			flex-wrap: wrap;
-			gap: 16px;
+	.meal-section {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 16px;
+		width: 100%;
+
+		/* Add this part to control card sizing */
+		.meal-card {
+			flex: 1 1 calc(16.666% - 32px); /* Six cards per row */
+			max-width: calc(16.666% - 32px);
+			box-sizing: border-box;
 		}
+	}
 
-		.button-section {
-			display: flex;
-			flex-direction: row;
+	.button-section {
+		display: flex;
+		flex-direction: row;
 
-			#reset {
-				margin-right: 16px;
-			}
+		#reset {
+			margin-right: 16px;
+		}
 
 			#randomize {
 
