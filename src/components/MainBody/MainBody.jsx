@@ -4,11 +4,13 @@ import { Button } from '@mui/material';
 import MealCard from '../MealCard/MealCard';
 import './MainBody.scss';
 import initialMeals from './mealData';
+import BasicModal from '../Modal/Modal';
 
 const MainBody = () => {
 
     const [meals, setMeals] = useState(initialMeals);
-  const [selectedMeal, setSelectedMeal] = useState(null); // State for the selected random meal
+    const [selectedMeal, setSelectedMeal] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
   const shuffleMeals = () => {
     const shuffledMeals = shuffleArray([...meals]);
@@ -17,16 +19,20 @@ const MainBody = () => {
     // Select a random meal from the shuffled array
     const randomMeal = shuffledMeals[Math.floor(Math.random() * shuffledMeals.length)];
     setSelectedMeal(randomMeal);
+    setIsModalOpen(true);
   };
 
   const resetMeals = () => {
     setMeals(initialMeals);
-    setSelectedMeal(null); // Clear the selected meal on reset
+    setSelectedMeal(null);
+    setIsModalOpen(false);
   };
 
   const shuffleArray = (array) => {
     return array.sort(() => Math.random() - 0.5);
   };
+
+  const handleCloseModal = () => setIsModalOpen(false);
 
     return (
         <Box
@@ -61,14 +67,14 @@ const MainBody = () => {
                 </Button>
             </div>
             {selectedMeal && (
-            <div className="selected-meal">
-                <h2>Randomly Selected Meal</h2>
-                <MealCard
-                    image={selectedMeal.image}
-                    title={selectedMeal.title}
-                    description={selectedMeal.description}
-                />
-            </div>
+                <BasicModal open={isModalOpen} handleClose={handleCloseModal}>
+                    <h2>Randomly Selected Meal</h2>
+                    <MealCard
+                        image={selectedMeal.image}
+                        title={selectedMeal.title}
+                        description={selectedMeal.description}
+                    />
+                </BasicModal>
             )}
             <div className="meal-section">
                 {meals.map((meal, index) => (
