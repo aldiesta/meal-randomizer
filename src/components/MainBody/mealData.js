@@ -59,41 +59,41 @@ const initialMeals = [
         title: 'Burgers',
         description: 'American',
     },
-    // {
-    //     image: 'src/assets/images/bbq-ribs.jpg',
-    //     title: 'BBQ Ribs',
-    //     description: 'American',
-    // },
-    // {
-    //     image: 'src/assets/images/pulled-pork.jpg',
-    //     title: 'Pulled Pork',
-    //     description: 'American',
-    // },
-    // {
-    //     image: 'src/assets/images/mac-and-cheese.jpg',
-    //     title: 'Mac and Cheese',
-    //     description: 'American',
-    // },
-    // {
-    //     image: 'src/assets/images/pizza.jpg',
-    //     title: 'Pizza',
-    //     description: 'Italian',
-    // },
-    // {
-    //     image: 'src/assets/images/pho.jpg',
-    //     title: 'Pho',
-    //     description: 'Vietnamese',
-    // },
-    // {
-    //     image: 'src/assets/images/bahn-mi.jpg',
-    //     title: 'Bahn Mi',
-    //     description: 'Vietnamese',
-    // },
-    // {
-    //     image: 'src/assets/images/paella.jpg',
-    //     title: 'Paella',
-    //     description: 'Spanish',
-    // },
+    {
+        image: 'src/assets/images/bbq-ribs.jpg',
+        title: 'BBQ Ribs',
+        description: 'American',
+    },
+    {
+        image: 'src/assets/images/pulled-pork.jpg',
+        title: 'Pulled Pork',
+        description: 'American',
+    },
+    {
+        image: 'src/assets/images/mac-and-cheese.jpg',
+        title: 'Mac and Cheese',
+        description: 'American',
+    },
+    {
+        image: 'src/assets/images/pizza.jpg',
+        title: 'Pizza',
+        description: 'Italian',
+    },
+    {
+        image: 'src/assets/images/pho.jpg',
+        title: 'Pho',
+        description: 'Vietnamese',
+    },
+    {
+        image: 'src/assets/images/bahn-mi.jpg',
+        title: 'Bahn Mi',
+        description: 'Vietnamese',
+    },
+    {
+        image: 'src/assets/images/paella.jpg',
+        title: 'Paella',
+        description: 'Spanish',
+    },
 ];
 
 export default initialMeals

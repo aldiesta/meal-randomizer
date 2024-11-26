@@ -24,7 +24,7 @@ const MealCard = ({ image, title, description }) => {
             {description}
           </Typography>
         </CardContent>
-        <CardActions>
+        {/* <CardActions>
           <Button 
             size="small"
             onClick={() => {
@@ -33,7 +33,7 @@ const MealCard = ({ image, title, description }) => {
           >
             Show Recipe
           </Button>
-        </CardActions>
+        </CardActions> */}
       </Card>
     </div>
   );
