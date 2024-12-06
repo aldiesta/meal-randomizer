@@ -2,9 +2,24 @@
   .card {
     width: 250px;
     height: 250px;
-  }
 
-  .card-media {
-    height: 150px;
+    .card-media {
+      height: 150px;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+
+      .description-and-delete {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .delete-button {
+          color: red;
+        }
+      }
+    }
   }
 }
