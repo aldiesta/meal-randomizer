@@ -27,7 +27,9 @@ let meals = [
     { image: 'src/assets/images/pizza.jpg', title: 'Pizza', description: 'Italian' },
     { image: 'src/assets/images/pho.jpg', title: 'Pho', description: 'Vietnamese' },
     { image: 'src/assets/images/bahn-mi.jpg', title: 'Bahn Mi', description: 'Vietnamese' },
-    { image: 'src/assets/images/paella.jpg', title: 'Paella', description: 'Spanish' }
+    { image: 'src/assets/images/paella.jpg', title: 'Paella', description: 'Spanish' },
+    { image: 'src/assets/images/alfredo.jpg', title: 'Fettucine Alfredo', description: 'Italian' },
+    { image: 'src/assets/images/ramen.jpg', title: 'Ramen', description: 'Japanese' }
 ];
 
 app.get('/api/meals', (req, res) => {

@@ -90,10 +90,15 @@ const initialMeals = [
         description: 'Vietnamese',
     },
     {
-        image: 'src/assets/images/paella.jpg',
-        title: 'Paella',
-        description: 'Spanish',
+        image: 'src/assets/images/alfredo.jpg',
+        title: 'Fettucine Alfredo',
+        description: 'Italian',
     },
+    {
+        image: 'src/assets/images/ramen.jpg',
+        title: 'Ramen',
+        description: 'Japanese',
+    }
 ];
 
 export default initialMeals
