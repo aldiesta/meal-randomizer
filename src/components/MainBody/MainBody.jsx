@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Box from '@mui/material/Box';
-import { Button } from '@mui/material';
+import { Button, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
 import MealCard from '../MealCard/MealCard';
 import './MainBody.scss';
 import initialMeals from './mealData';
@@ -11,6 +11,7 @@ const MainBody = () => {
   const [deletedMeals, setDeletedMeals] = useState([]);
   const [selectedMeal, setSelectedMeal] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [filter, setFilter] = useState('All');
 
   const shuffleMeals = () => {
     const shuffledMeals = shuffleArray([...meals]);
@@ -70,6 +71,38 @@ const MainBody = () => {
         >
           Randomize
         </Button>
+        <FormControl sx={{ minWidth: 150, marginLeft: 2 }} size="small">
+  <InputLabel
+    id="meal-filter-label"
+    sx={{ color: 'white' }}
+  />
+  <Select
+    labelId="meal-filter-label"
+    id="meal-filter"
+    value={filter}
+    label="Filter"
+    onChange={(e) => setFilter(e.target.value)}
+    sx={{
+      backgroundColor: 'primary.main',
+      color: 'white',
+      '& .MuiSelect-icon': {
+        color: 'white',
+      },
+      '&:hover': {
+        backgroundColor: 'primary.dark',
+      },
+    }}
+  >
+    <MenuItem value="All">All Meals</MenuItem>
+    <MenuItem value="American">American</MenuItem>
+    <MenuItem value="Chinese">Chinese</MenuItem>
+    <MenuItem value="Italian">Italian</MenuItem>
+    <MenuItem value="Japanese">Japanese</MenuItem>
+    <MenuItem value="Mexican">Mexican</MenuItem>
+    <MenuItem value="Vietnamese">Vietnamese</MenuItem>
+  </Select>
+</FormControl>
+
       </div>
       {selectedMeal && (
         <BasicModal open={isModalOpen} handleClose={handleCloseModal}>
