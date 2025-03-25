@@ -114,6 +114,11 @@ const initialMeals = [
         title: 'Fried Chicken',
         description: 'American',
     },
+    {
+        image: 'src/assets/images/dumplings.jpg',
+        title: 'Dumplings',
+        description: 'Chinese',
+    },
 ];
 
 export default initialMeals

@@ -71,7 +71,7 @@ const MainBody = () => {
         >
           Randomize
         </Button>
-        <FormControl sx={{ minWidth: 150, marginLeft: 2 }} size="small">
+        <FormControl sx={{ minWidth: 150 }} size="small">
   <InputLabel
     id="meal-filter-label"
     sx={{ color: 'white' }}

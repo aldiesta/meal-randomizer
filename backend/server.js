@@ -33,6 +33,8 @@ let meals = [
     { image: 'src/assets/images/meatloaf.jpg', title: 'Meatloaf', description: 'American' },
     { image: 'src/assets/images/wings.jpg', title: 'Wings', description: 'American' },
     { image: 'src/assets/images/fried-chicken.jpg', title: 'Fried Chicken', description: 'American' },
+    { image: 'src/assets/images/dumplings.jpg', title: 'Dumplings', description: 'Chinese' },
+
 ];
 
 app.get('/api/meals', (req, res) => {
