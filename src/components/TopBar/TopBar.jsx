@@ -13,7 +13,7 @@ const TopBar = () => {
 						variant="dense"
 						sx={{ justifyContent: 'center' }}
 						>
-					<Typography variant="h6" color="inherit" component="div">
+					<Typography variant="h5" color="inherit" component="div">
 						Meal Randomizer
 					</Typography>
 					</Toolbar>

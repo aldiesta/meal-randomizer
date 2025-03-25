@@ -29,7 +29,10 @@ let meals = [
     { image: 'src/assets/images/bahn-mi.jpg', title: 'Bahn Mi', description: 'Vietnamese' },
     { image: 'src/assets/images/paella.jpg', title: 'Paella', description: 'Spanish' },
     { image: 'src/assets/images/alfredo.jpg', title: 'Fettucine Alfredo', description: 'Italian' },
-    { image: 'src/assets/images/ramen.jpg', title: 'Ramen', description: 'Japanese' }
+    { image: 'src/assets/images/ramen.jpg', title: 'Ramen', description: 'Japanese' },
+    { image: 'src/assets/images/meatloaf.jpg', title: 'Meatloaf', description: 'American' },
+    { image: 'src/assets/images/wings.jpg', title: 'Wings', description: 'American' },
+    { image: 'src/assets/images/fried-chicken.jpg', title: 'Fried Chicken', description: 'American' },
 ];
 
 app.get('/api/meals', (req, res) => {

@@ -98,7 +98,22 @@ const initialMeals = [
         image: 'src/assets/images/ramen.jpg',
         title: 'Ramen',
         description: 'Japanese',
-    }
+    },
+    {
+        image: 'src/assets/images/meatloaf.jpg',
+        title: 'Meatloaf',
+        description: 'American',
+    },
+    {
+        image: 'src/assets/images/wings.jpg',
+        title: 'Wings',
+        description: 'American',
+    },
+    {
+        image: 'src/assets/images/fried-chicken.jpg',
+        title: 'Fried Chicken',
+        description: 'American',
+    },
 ];
 
 export default initialMeals

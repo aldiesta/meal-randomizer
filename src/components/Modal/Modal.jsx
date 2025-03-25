@@ -8,7 +8,7 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    bgcolor: '#807979',
+    background: 'radial-gradient(592px at 48.2% 50%, rgb(255, 255, 249) 0%, rgb(160, 199, 254) 74.6%)',
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
@@ -16,6 +16,7 @@ const style = {
     flexDirection: 'column',
     alignItems: 'center',
 };
+
 
 export default function BasicModal({ open, handleClose, children }) {
     return (
